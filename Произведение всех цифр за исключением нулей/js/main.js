@@ -1,5 +1,5 @@
 "use strict";
-var data = 1000;
+var data = 1234560;
 
 function digitsMultip(data) {
     data = data.toString();

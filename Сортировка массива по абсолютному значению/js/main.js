@@ -1,12 +1,11 @@
 "use strict";
-var numbers = [-20, -5, 10, 15];
+var numbers = [-20, -30, 10, 15];
 
 function absoluteSorting(numbers){
-    function ascending(a ,b) {
-        return a > b
-    }
-    numbers = numbers.sort(ascending());
+    numbers = numbers.sort(function (a,b) {
+        return Math.abs(a) - Math.abs(b);
+    });
+    console.log(numbers);
     return numbers
 }
-console.log(absoluteSorting(numbers));
-
+absoluteSorting(numbers);
